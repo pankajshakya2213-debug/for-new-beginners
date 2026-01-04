@@ -18,7 +18,7 @@
         <nav>
             <a data-aos="fade-down" data-aos-duration="1500" href="#">COMPANY</a>
             <a data-aos="fade-down" data-aos-duration="2000" href="#">FEATURES</a>
-            <a data-aos="fade-down" data-aos-duration="2500" href="#">RESOURCES</a>
+            <a data-aos="fade-down" data-aos-duration="2500" href="#" onclick="showResource(event)">RESOURCES</a>
             <a data-aos="fade-down" data-aos-duration="3000" href="#">DOCS</a>
         </nav>
 
@@ -57,6 +57,10 @@
           </div>
 
        </div>
+          <img id="resourceImg" src="images/lklklk.jpg" 
+     alt="Resource Image" 
+     style="display:none; width:300px; margin-top:20px;">
+          
       </main>
 
       <spline-viewer data-aos="fade-zoom-in"
@@ -73,6 +77,18 @@
     AOS.init();
   </script>
 
+    <script>
+function showResource(event) {
+    event.preventDefault(); // link के default action को रोकता है
+    const img = document.getElementById("resourceImg");
+    img.style.display = "block"; // image show कर देता है
+    img.scrollIntoView({behavior: "smooth"}); // scroll करके दिखाए
+}
+</script>
+    
+    
+
 </body>
 </html>
+
 
