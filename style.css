@@ -310,4 +310,14 @@ main{
     }
 
 
+
+}
+
+#resourceImg {
+    display: block;   /* inline problem fix */
+    margin: 20px auto; /* center horizontally */
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
 }
